@@ -1,9 +1,9 @@
 import { ButtonContainer } from "./styles";
 
-function Button() {
+function Button({label, onClick}) {
     return (
-      <ButtonContainer>
-        Submit !
+      <ButtonContainer onClick={onClick}>
+        {label}
       </ButtonContainer>
     );
   }
